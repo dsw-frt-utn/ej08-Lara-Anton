@@ -11,20 +11,17 @@ namespace Dsw2026Ej8.Ejercicio8
             int suma = 0;
             int cantidadNotas = 0;
 
-            if(nota1.Value is null && nota2.Value is null && nota3.Value is null)
-                return 0.0;
-
-            if (nota1.HasValue)
+            if (nota1.HasValue && nota1 >= 0 && nota1 <= 10)
             {
                 suma += nota1.Value;
                 cantidadNotas++;
             }
-            if (nota2.HasValue)
+            if (nota2.HasValue && nota2 >= 0 && nota2 <= 10)
             {
                 suma += nota2.Value;
                 cantidadNotas++;
             }
-            if (nota3.HasValue)
+            if (nota3.HasValue && nota3 >= 0 && nota3 <= 10)
             {
                 suma += nota3.Value;
                 cantidadNotas++;
